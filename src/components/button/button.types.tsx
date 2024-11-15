@@ -3,5 +3,10 @@ export interface ButtonProps {
     onClick: () => void;
     disabled?: boolean;
     className?: string;
-    
+    icon?: React.ElementType;
+    iconStyle?: string;
+}
+
+export interface FileButtonProps extends ButtonProps {
+    id: string;
 }
